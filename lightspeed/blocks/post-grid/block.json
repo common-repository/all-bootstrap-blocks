@@ -1,0 +1,235 @@
+{
+	"apiVersion": 2,
+	"name": "areoi-lightspeed/post-grid",
+	"title": "Post Grid",
+	"parent": null,
+	"category": "areoi-lightspeed",
+	"description": "",
+	"textdomain": "default",
+	"keywords": [ "areoi", "lightspeed" ],
+	"example": {
+		"attributes": {
+			"preview": true
+		}
+	},
+	"attributes": {
+		"preview": {
+			"type": "boolean",
+			"default": false
+		},
+		"block_id": {
+			"type": "string",
+			"default": ""
+		},
+		"block_order": {
+			"type": "number",
+			"default": 1
+		},
+		"anchor": {
+			"type": "string",
+			"default": ""
+		},
+		"size": {
+			"type": "string",
+			"default": "100vh"
+		},
+		"alignment": {
+			"type": "string",
+			"default": ""
+		},
+		"padding": {
+			"type": "string",
+			"default": ""
+		},
+		"media_position": {
+			"type": "string",
+			"default": ""
+		},
+		"filename": {
+			"type": "string",
+			"default": "1.php"
+		},
+		"heading": {
+			"type": "string",
+			"default": "Latest Posts."
+		},
+		"sub_heading": {
+			"type": "string",
+			"default": ""
+		},
+		"introduction": {
+			"type": "string",
+			"default": ""
+		},
+		"include_cta": {
+			"type": "boolean",
+			"default": true
+		},
+		"cta": {
+			"type": "string",
+			"default": "View all posts"
+		},
+		"cta_size": {
+			"type": "string",
+			"default": "btn-lg"
+		},
+		"url": {
+	        "type": "string",
+	        "default": ""
+	    },
+	    "opensInNewTab": {
+	        "type": "boolean",
+	        "default": false
+	    },
+
+		"heading_color": {
+			"type": "string",
+			"default": ""
+		},
+		"sub_heading_color": {
+			"type": "string",
+			"default": ""
+		},
+		"introduction_color": {
+			"type": "string",
+			"default": ""
+		},
+		"cta_color": {
+			"type": "string",
+			"default": ""
+		},
+
+		"post_background_color": {
+			"type": "string",
+			"default": ""
+		},
+		"post_title_color": {
+			"type": "string",
+			"default": ""
+		},
+		"post_excerpt_color": {
+			"type": "string",
+			"default": ""
+		},
+
+		"post_type": {
+			"type": "string",
+			"default": "post"
+		},
+		"display_posts": {
+			"type": "string",
+			"default": "selected"
+		},
+		"posts_per_page": {
+			"type": "string",
+			"default": "8"
+		},
+		"orderby": {
+			"type": "string",
+			"default": "title"
+		},
+		"order": {
+			"type": "string",
+			"default": "asc"
+		},
+		"post_ids": {
+			"type": "array",
+			"default": []
+		},
+		"include_pagination": {
+			"type": "boolean",
+			"default": false
+		},
+		"pagination_color": {
+			"type": "string",
+			"default": "btn-primary"
+		},
+		"include_media": {
+			"type": "boolean",
+			"default": true
+		},
+		"include_title": {
+			"type": "boolean",
+			"default": true
+		},
+		"include_excerpt": {
+			"type": "boolean",
+			"default": false
+		},
+		"include_permalink": {
+			"type": "boolean",
+			"default": true
+		},
+
+		"exclude_divider": {
+	        "type": "boolean",
+	        "default": false
+	    },
+	    "exclude_pattern": {
+	        "type": "boolean",
+	        "default": false
+	    },
+	    "change_pattern_color": {
+	        "type": "boolean",
+	        "default": false
+	    },
+	    "pattern_color": {
+			"type": "object",
+			"default": {
+				"hex": "#fff"
+			}
+		},
+	    "exclude_transition": {
+	        "type": "boolean",
+	        "default": false
+	    },
+	    "exclude_parallax": {
+	        "type": "boolean",
+	        "default": false
+	    },
+
+		"background_display": {
+			"type": "boolean",
+			"default": false
+		},
+		"background_utility": {
+			"type": "string",
+			"default": ""
+		},
+		"background_color": {
+			"type": "object",
+			"default": {}
+		},
+		"background_image": {
+			"type": "object",
+			"default": {}
+		},
+		"background_video": {
+			"type": "object",
+			"default": {}
+		},
+		"background_display_overlay": {
+			"type": "boolean",
+			"default": false
+		},
+		"background_overlay": {
+			"type": "object",
+			"default": {
+				"rgb": {
+					"r": 0,
+					"g": 0,
+					"b": 0,
+					"a": 1
+				}
+			}
+		}
+	},
+	"supports": {
+		"anchor": true,
+		"align": false,
+		"html": false
+	},
+    "editorScript": "",
+    "editorStyle": "file:index.css",
+    "style": ""
+}

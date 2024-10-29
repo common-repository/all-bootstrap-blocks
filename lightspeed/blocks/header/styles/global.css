@@ -1,0 +1,260 @@
+.areoi-menu-item-featured-image {
+	background-color: rgba( 0, 0, 0, 0.1 );
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	transition:  all 0.25s ease-in-out;
+}
+.areoi-menu-item-label {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+	position: relative;
+	top:  0;
+	transition:  all 0.25s ease-in-out;
+}
+.areoi-main-menu {
+	position: relative;
+	z-index: 1;
+	transition: all 0.5s ease-in-out;
+}
+.areoi-main-menu a,
+.areoi-top-bar a,
+.areoi-more-menu a,
+.areoi-main-menu button,
+.areoi-top-bar button,
+.areoi-more-menu button {
+	text-decoration: none;
+	background: none;
+	border:  none;
+	transition: all 0.25s ease-in-out;
+}
+.areoi-main-menu a:hover,
+.areoi-top-bar a:hover,
+.areoi-more-menu a:hover,
+.areoi-main-menu button:hover,
+.areoi-top-bar button:hover,
+.areoi-more-menu button:hover {
+	opacity: 0.4;
+}
+.areoi-feature-menu a:hover {
+	opacity: 1;
+}
+
+.areoi-header-brand img {
+	width: auto;
+	height: 100%;
+	display: block;
+}
+.areoi-main-menu .areoi-header-menu > ul,
+.areoi-top-bar .areoi-top-bar-menu > ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.areoi-main-menu .areoi-header-menu > ul > li,
+.areoi-top-bar .areoi-top-bar-menu > ul > li {
+	margin: 0 10px;
+	padding: 0;
+}
+.areoi-main-menu .areoi-header-menu > ul ul a,
+.areoi-top-bar .areoi-top-bar-menu > ul ul a {
+	display: block;
+}
+.areoi-main-menu .areoi-header-menu > ul > li > button,
+.areoi-top-bar .areoi-top-bar-menu > ul > li > button {
+	transition: transform 0.25s ease-in-out;
+}
+.areoi-main-menu .areoi-header-menu > ul > li > button.show,
+.areoi-top-bar .areoi-top-bar-menu > ul > li > button.show {
+	transform: rotate(180deg);
+}
+.areoi-main-menu .areoi-header-menu > ul > li ul button,
+.areoi-top-bar .areoi-top-bar-menu > ul > li ul button {
+	display: none;
+}
+
+.areoi-header-brand-default,
+.areoi-header-brand-scroll {
+	opacity: 1;
+	transition: all 0.25s ease-in-out;
+}
+.areoi-header-brand-scroll {
+	opacity: 0;
+}
+.scrolled .areoi-header-brand-default {
+	opacity: 0;
+}
+.scrolled .areoi-header-brand-scroll {
+	opacity: 1;
+}
+.areoi-top-bar {
+	height: 46px;
+	padding: 10px 0;
+	font-size: 0.85rem;
+	border-bottom:  1px solid rgba( 255, 255, 255, 0 );
+	transition: all 0.5s ease-in-out;
+}
+.scrolled .areoi-top-bar {
+	margin-top: -46px;
+}
+.areoi-top-bar .areoi-top-bar-menu > ul {
+	align-items: center;
+	justify-content: flex-end;
+}
+.areoi-top-bar .areoi-top-bar-menu > ul > li:first-of-type {
+	margin: 0 10px 0 0;
+}
+.areoi-top-bar .areoi-top-bar-menu > ul > li:last-of-type {
+	margin: 0 0 0 10px;
+}
+
+.areoi-more-menu {
+	width: 500px;
+	transition: transform 0.5s ease-in-out 0.25s;
+}
+.areoi-more-menu.show {
+	transition: transform 0.5s ease-in-out;
+}
+.areoi-more-menu a {
+	text-decoration: none;
+}
+.areoi-more-menu button {
+	background: none;
+	border:  none;
+}
+.areoi-more-menu .areoi-offcanvas-close {
+	width: 48px;
+	height: 48px;
+	display: block;
+}
+.areoi-more-menu .offcanvas-body {
+	position: relative;
+	overflow-x: hidden;
+}
+.areoi-more-menu .areoi-more-menu-main ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.areoi-more-menu .areoi-more-menu-main ul li {
+	margin: 15px 0;
+	opacity: 1;
+	transition: all 0.5s ease-in-out;
+}
+.areoi-more-menu.show .areoi-more-menu-main > div > ul a,
+.areoi-more-menu.show .areoi-more-menu-main > div > ul button {
+	position: relative;
+	display: inline-block;
+}
+
+.areoi-more-menu .areoi-more-menu-main ul .offcanvas-body {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out, visibility 0s ease-in-out 0.5s;
+}
+.areoi-more-menu .areoi-more-menu-main ul .offcanvas-body.active {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out, visibility 0s ease-in-out;
+}
+.areoi-more-menu .areoi-more-menu-main ul .offcanvas-body .areoi-offcanvas-back {
+	width: 48px;
+	height: 48px;
+	display: block;
+}
+
+.areoi-feature-menu {
+	width: calc( 100vw - 500px );
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 500px;
+	overflow-y: auto;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s ease-in-out 0.5s, opacity 0.5s ease-in-out;
+}
+.areoi-more-menu.show .areoi-feature-menu {
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 0s ease-in-out 0.5s, opacity 0.5s ease-in-out 0.5s;
+}
+.areoi-feature-menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.areoi-feature-menu ul li {
+	position: relative;
+	overflow: hidden;
+}
+.areoi-feature-menu .card {
+	background: none;
+	border: none;
+}
+.areoi-search-menu-loader {
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
+.areoi-search-menu.loading .areoi-search-menu-loader {
+	display: flex;
+}
+.areoi-search-menu.loading .areoi-search-menu-results,
+.areoi-search-menu.loading .areoi-drag-container {
+	display: none;
+}
+.areoi-search-menu-form .alert {
+	display: none;
+}
+.areoi-search-menu.info .areoi-search-menu-form .alert-info {
+	display: block;
+}
+.areoi-search-menu.danger .areoi-search-menu-form .alert-danger {
+	display: block;
+}
+
+@media only screen and (max-width: 992px) {
+	.areoi-more-menu,
+	.areoi-search-menu {
+		display: block;
+		overflow-y: auto;
+	}
+	.areoi-feature-menu {
+		width: 100%;
+		min-height: 50vh;
+		height: auto;
+		position: relative;
+		top: 0;
+		right: 0;
+	}
+	.areoi-feature-menu .carousel-item,
+	.areoi-feature-menu .areoi-drag-container  {
+		height: 50vh !important;
+	}
+	.areoi-header-btns {
+		border:  none !important;
+	}
+}

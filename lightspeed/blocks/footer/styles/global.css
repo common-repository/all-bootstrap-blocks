@@ -1,0 +1,43 @@
+.areoi-footer a {
+	text-decoration: none;
+	display: block;
+	transition: opacity 0.25s ease-in-out;
+}
+.areoi-footer a:hover {
+	opacity: 0.4;
+}
+.areoi-footer-strip {
+	border-top: 1px solid rgba( 0, 0, 0, 0 );
+}
+.areoi-footer ul {
+	list-style: none;
+	padding: 0 !important;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.areoi-footer-main-menu .col > ul > li {
+	margin-bottom: 1.5rem;
+}
+.areoi-footer-main-menu .h5 {
+	margin-bottom: 1rem;
+}
+
+.areoi-footer-bottom-bar {
+	font-size: 0.85em;
+}
+.areoi-footer-bottom-bar ul {
+	display: flex;
+	justify-content: center;
+}
+.areoi-footer-bottom-bar ul li {
+	margin: 0 10px;
+}
+.areoi-footer-bottom-bar ul li:first-of-type {
+	margin: 0 10px 0 0;
+}
+.areoi-footer-bottom-bar ul li:last-of-type {
+	margin: 0 0 0 10px;
+}
+.areoi-footer-bottom-bar ul ul {
+	display: none;
+}
